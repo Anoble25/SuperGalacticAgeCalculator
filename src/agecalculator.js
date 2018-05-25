@@ -22,26 +22,29 @@ export class ageCalculator{
   calculateAgeInMercuryYears(){
     let mercuryAge=this.age/.24;
     console.log("Your age in Mercury years is: "+mercuryAge+" years.");
-    return "Your age in Mercury years is: "+mercuryAge+" years.";
+    return mercuryAge;
   }
 
   calculateAgeInVenusYears(){
     let venusAge=this.age/.62;
     console.log("Your age in Venus years is: "+venusAge+" years.");
-    return "Your age in Venus years is: "+venusAge+" years.";
+    return venusAge;
   }
 
   calculateAgeInMarsYears(){
     let marsAge=this.age/1.88;
     console.log("Your age in Mars years is: "+marsAge+" years.");
-    return "Your age in Mars years is: "+marsAge+" years.";
+    return marsAge;
   }
 
   calculateAgeInJupiterYears(){
     let jupiterAge=this.age/11.86;
     console.log("Your age in Jupiter years is: "+jupiterAge+" years.");
-    return "Your age in Jupiter years is: "+jupiterAge+" years.";
+    return jupiterAge;
   }
 
+  calculateYearsLeft(){
+    
+  }
 
 }

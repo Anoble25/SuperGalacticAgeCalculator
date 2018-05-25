@@ -28,25 +28,30 @@ describe('ageCalculator', function() {
 
   it('will take a person’s age in Earth years and convert it to Mercury years', function() {
     let thirdTest = new ageCalculator(30);
-    expect(thirdTest.calculateAgeInMercuryYears()).toEqual("Your age in Mercury years is: "+125+" years.");
+    expect("Your age in Mercury years is: "+thirdTest.calculateAgeInMercuryYears()+" years.").toEqual("Your age in Mercury years is: "+125+" years.");
     //expect(num.toEqual(0);
   });
 
   it('will take a person’s age in Earth years and convert it to Venus years', function() {
     let fourthTest = new ageCalculator(30);
-    expect(fourthTest.calculateAgeInVenusYears()).toEqual("Your age in Venus years is: "+48.38709677419355+" years.");
+    expect("Your age in Venus years is: "+fourthTest.calculateAgeInVenusYears()+" years.").toEqual("Your age in Venus years is: "+48.38709677419355+" years.");
     //expect(num.toEqual(0);
   });
 
   it('will take a person’s age in Earth years and convert it to Mars years', function() {
     let fifthTest = new ageCalculator(30);
-    expect(fifthTest.calculateAgeInMarsYears()).toEqual("Your age in Mars years is: "+15.957446808510639+" years.");
+    expect("Your age in Mars years is: "+fifthTest.calculateAgeInMarsYears()+" years.").toEqual("Your age in Mars years is: "+15.957446808510639+" years.");
     //expect(num.toEqual(0);
   });
 
   it('will take a person’s age in Earth years and convert it to Jupiter years', function() {
     let sixthTest = new ageCalculator(30);
-    expect(sixthTest.calculateAgeInJupiterYears()).toEqual("Your age in Jupiter years is: "+2.5295109612141653+" years.");
+    expect("Your age in Jupiter years is: "+sixthTest.calculateAgeInJupiterYears()+" years.").toEqual("Your age in Jupiter years is: "+2.5295109612141653+" years.");
     //expect(num.toEqual(0);
   });
+
+  // it('will determine how many years a person has left to live on each planet', function(){
+  //   let seventhTest=new ageCalculator(30);
+  //   expect(seventhTest.calculateYearsLeft()).toEqual("You have";)
+  // }
 });
