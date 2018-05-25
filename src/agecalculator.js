@@ -50,13 +50,42 @@ export class ageCalculator{
     let earthExpectancy=(averageLifeExpectancy-earthAge);
     console.log(earthExpectancy);
     if (earthExpectancy>0){
-      output+="You have "+earthExpectancy+" years left on earth";
+      output+="You have "+earthExpectancy+" years left on Earth. ";
     } else {
-      output+="You have lived "+Math.abs(earthExpectancy)+" years longer than expected.";
+      output+="You have lived on Earth "+Math.abs(earthExpectancy)+" years longer than expected. ";
     }
 
+    let mercuryExpectancy=(averageLifeExpectancy-mercuryAge);
+    console.log(mercuryExpectancy);
+    if (mercuryExpectancy>0){
+      output+="You have "+mercuryExpectancy+" years left on Mercury. ";
+    } else {
+      output+="You have lived on Mercury "+Math.abs(mercuryExpectancy)+" years longer than expected. ";
+    }
 
+    let venusExpectancy=(averageLifeExpectancy-venusAge);
+    console.log(venusExpectancy);
+    if (venusExpectancy>0){
+      output+="You have "+venusExpectancy+" years left on Venus. ";
+    } else {
+      output+="You have lived on Venus "+Math.abs(venusExpectancy)+" years longer than expected. ";
+    }
 
+    let marsExpectancy=(averageLifeExpectancy-marsAge);
+    console.log(marsExpectancy);
+    if (marsExpectancy>0){
+      output+="You have "+marsExpectancy+" years left on Mars. ";
+    } else {
+      output+="You have lived on Mars "+Math.abs(marsExpectancy)+" years longer than expected. ";
+    }
+
+    let jupiterExpectancy=(averageLifeExpectancy-jupiterAge);
+    console.log(jupiterExpectancy);
+    if (jupiterExpectancy>0){
+      output+="You have "+jupiterExpectancy+" years left on Jupiter. ";
+    } else {
+      output+="You have lived on Jupiter "+Math.abs(jupiterExpectancy)+" years longer than expected. ";
+    }
 
     console.log(output);
     return output;

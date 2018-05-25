@@ -58,6 +58,6 @@ describe('ageCalculator', function() {
     let marsAge=seventhTest.calculateAgeInMarsYears();
     let jupiterAge=seventhTest.calculateAgeInJupiterYears();
 
-    expect(seventhTest.calculateYearsLeft(earthAge, mercuryAge, venusAge, marsAge, jupiterAge)).toEqual("You have "+40.5+" years left on earth");
+    expect(seventhTest.calculateYearsLeft(earthAge, mercuryAge, venusAge, marsAge, jupiterAge)).toEqual("You have 40.5 years left on Earth. You have lived on Mercury 54.5 years longer than expected. You have 22.11290322580645 years left on Venus. You have 54.54255319148936 years left on Mars. You have 67.97048903878583 years left on Jupiter. ");
   });
 });
