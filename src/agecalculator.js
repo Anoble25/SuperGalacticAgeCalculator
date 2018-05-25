@@ -13,9 +13,15 @@ export class ageCalculator{
 
   //Take two dates and determine the difference, in seconds, between the two.
   calculateDiffOfDates(){
-    let diff=Math.abs((this.date1-this.date2)/1000)
-    console.log("The difference in seconds between the two dates is: "+diff+ " seconds.")
+    let diff=Math.abs((this.date1-this.date2)/1000);
+    console.log("The difference in seconds between the two dates is: "+diff+ " seconds.");
     return "The difference in seconds between the two dates is: "+diff+ " seconds.";
 
+  }
+
+  calculateAgeInMercuryYears(){
+    let mercuryAge=this.age/.24;
+    console.log("Your age in Mercury years is: "+mercuryAge+" years.");
+    return "Your age in Mercury years is: "+mercuryAge+" years.";
   }
 }

@@ -10,7 +10,7 @@ describe('ageCalculator', function() {
     //expect(num.toEqual(0);
   });
 
-  it('will take two dates calculate the difference in seconds between the two', function() {
+  it('will take two dates calculate the difference in seconds between the two.', function() {
     let currentTime=new Date();
     let date1=new Date(1987, 6, 14);
     let date2=new Date(1987, 6, 15);
@@ -26,8 +26,10 @@ describe('ageCalculator', function() {
     //expect(num.toEqual(0);
   });
 
-  // it('get a number and return all of the even valued terms for the Fibonacci sequence up to the inputted number', function(){
-  //   var secondProb = new Problem();
-  //   expect(secondProb.problem2(10)).toEqual(44);
-  // });
+  it('take a person’s age in Earth years and convert it to Mercury years', function() {
+    let thirdTest = new ageCalculator(30);
+    expect(thirdTest.calculateAgeInMercuryYears()).toEqual("Your age in Mercury years is: "+125+" years.");
+    //expect(num.toEqual(0);
+  });
+
 });
