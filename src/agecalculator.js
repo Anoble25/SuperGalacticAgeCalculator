@@ -43,8 +43,24 @@ export class ageCalculator{
     return jupiterAge;
   }
 
-  calculateYearsLeft(){
-    
+  calculateYearsLeft(earthAge, mercuryAge, venusAge, marsAge, jupiterAge){
+    //worldwide Earth life expectancy as of 2015
+    const averageLifeExpectancy=70.5;
+    let output="";
+    let earthExpectancy=(averageLifeExpectancy-earthAge);
+    console.log(earthExpectancy);
+    if (earthExpectancy>0){
+      output+="You have "+earthExpectancy+" years left on earth";
+    } else {
+      output+="You have lived "+Math.abs(earthExpectancy)+" years longer than expected.";
+    }
+
+
+
+
+    console.log(output);
+    return output;
+
   }
 
 }

@@ -50,8 +50,14 @@ describe('ageCalculator', function() {
     //expect(num.toEqual(0);
   });
 
-  // it('will determine how many years a person has left to live on each planet', function(){
-  //   let seventhTest=new ageCalculator(30);
-  //   expect(seventhTest.calculateYearsLeft()).toEqual("You have";)
-  // }
+  it('will determine how many years a person has left to live on each planet', function(){
+    let earthAge=30;
+    let seventhTest=new ageCalculator(earthAge);
+    let mercuryAge=seventhTest.calculateAgeInMercuryYears();
+    let venusAge=seventhTest.calculateAgeInVenusYears();
+    let marsAge=seventhTest.calculateAgeInMarsYears();
+    let jupiterAge=seventhTest.calculateAgeInJupiterYears();
+
+    expect(seventhTest.calculateYearsLeft(earthAge, mercuryAge, venusAge, marsAge, jupiterAge)).toEqual("You have "+40.5+" years left on earth");
+  });
 });
