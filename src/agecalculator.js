@@ -4,7 +4,8 @@ export class ageCalculator{
   }
 
   calculateAgeInSeconds(){
-    return this.age*365*24*60*60;
+    // return this.age*365*24*60*60;
+    return 4;
   }
 
 
